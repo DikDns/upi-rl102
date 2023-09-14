@@ -4,6 +4,28 @@ TIMES = "*"
 DIVISION = "/"
 
 
+def main():
+    print("\n[]========| CALCULATOR |========[]\n")
+
+    arithmetics_list = []
+    index = 0
+    while True:
+        if (index % 2 == 0):
+            input_value = float(input("Masukkan angka (1,2,3,...) : "))
+            arithmetics_list.append(input_value)
+        else:
+            input_value = input("Masukkan operasi (+,-,*,/,=) : ")
+            arithmetics_list.append(input_value)
+            if (input_value != PLUS and input_value != MINUS and input_value != TIMES and input_value != DIVISION and input_value != "="):
+                print("INVALID INPUT!")
+                break
+        if (arithmetics_list.count("=") > 0):
+            break
+        index += 1
+
+    print("= ", perfom_calculation(arithmetics_list))
+
+
 def calculate(n1=0, operand=PLUS, n2=0):
     if (operand == PLUS):
         return n1 + n2
@@ -72,26 +94,3 @@ def perfom_calculation(list=[]):
         return perfom_calculation(temp_list)
 
     return 0
-
-
-print("[]========| CALCULATOR |========[]")
-
-
-list = []
-
-index = 0
-while True:
-    if (index % 2 == 0):
-        temp = float(input("Masukkan angka (1,2,3,...) : "))
-        list.append(temp)
-    else:
-        temp = input("Masukkan operasi (+,-,*,/,=) : ")
-        list.append(temp)
-        if (temp != PLUS and temp != MINUS and temp != TIMES and temp != DIVISION and temp != "="):
-            print("INVALID INPUT!")
-            break
-    if (list.count("=") > 0):
-        break
-    index += 1
-
-print(perfom_calculation(list))
