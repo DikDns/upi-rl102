@@ -18,7 +18,7 @@ def main():
             arithmetics_list.append(input_value)
             if (input_value != PLUS and input_value != MINUS and input_value != TIMES and input_value != DIVISION and input_value != "="):
                 print("INVALID INPUT!")
-                break
+                return 0
         if (arithmetics_list.count("=") > 0):
             break
         index += 1
