@@ -2,8 +2,8 @@
 
 buah = ["apel", "jeruk", "ceri", "durian", "apel", "mangga", ]
 
-# List ke-2 sampai ke-5
-print(buah[1:5])
+# output: ceri durian apel
+print(buah[2:5])
 # Hapus apel
 buah.pop(-2)
 # Rename ceri
