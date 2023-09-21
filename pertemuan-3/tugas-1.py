@@ -1,6 +1,6 @@
 
 
-buah = ["apel", "jeruk", "ceri", "durian", "apel", "mangga", ]
+buah = ["apel", "jeruk", "ceri", "durian", "apel", "mangga"]
 
 # output: ceri durian apel
 print(buah[2:5])

@@ -1,6 +1,6 @@
 
 
-buah = ("apel", "jeruk", "ceri", "durian", "apel", "mangga", )
+buah = ("apel", "jeruk", "ceri", "durian", "apel", "mangga")
 
 # List ke-2 sampai ke-5
 print(buah[2:5])
