@@ -35,8 +35,7 @@ buah.sort()
 print(buah)
 
 # Tuple
-makanan_tradisional = ("rendang", "sate", "soto",
-                       "nasi goreng", "bakso", "rendang")
+makanan_tradisional = ("rendang", "sate", "soto", "nasi goreng", "bakso", "rendang")
 
 # Unpacking
 print("\n[]============| Unpacking Data   |============[]")
